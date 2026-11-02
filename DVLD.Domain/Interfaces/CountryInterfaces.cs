@@ -1,8 +1,10 @@
-﻿using DVLD.Domain.Entities;
-using DVLD.Domain.Interfaces;
-public interface ICountriesRepository : ICrud<Country>
-{
-    Task<bool> CountryNameExistsAsync(string countryName);
+using DVLD.Domain.Entities;
 
-    Task<int> CountAsync();
+namespace DVLD.Domain.Interfaces
+{
+    public interface ICountriesRepository : ICrud<Country>
+    {
+        Task<bool> CountryNameExistsAsync(string countryName);
+        Task<int> CountAsync();
+    }
 }

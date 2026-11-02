@@ -1,13 +1,13 @@
-﻿
+
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVLD.API", "API\DVLD.API.csproj", "{E3587177-03C9-4C6D-BFBB-43457775464C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVLD.API", "DVLD.API\DVLD.API.csproj", "{E3587177-03C9-4C6D-BFBB-43457775464C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVLD.Business", "Business\DVLD.Business.csproj", "{364C24E9-466C-47E8-9FF2-C8CEB999ADD8}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVLD.Application", "DVLD.Application\DVLD.Application.csproj", "{364C24E9-466C-47E8-9FF2-C8CEB999ADD8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVLD.DataAccess", "DataAccess\DVLD.DataAccess.csproj", "{E0615DAC-AAB8-4B29-984C-3B5D258291A5}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVLD.Infrastructure", "DVLD.Infrastructure\DVLD.Infrastructure.csproj", "{E0615DAC-AAB8-4B29-984C-3B5D258291A5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DVLD.Domain", "DVLD.Domain\DVLD.Domain.csproj", "{042EF61E-C61F-417E-9F3A-7C590FB98EEE}"
 EndProject

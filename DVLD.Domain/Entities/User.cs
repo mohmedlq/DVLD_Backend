@@ -14,9 +14,9 @@ public partial class User
 
     public string Password { get; set; } = null!;
 
-    public bool IsActive { get; set; }
+    public bool? IsActive { get; set; }
     
-    public enPermissions Permissions { get; set; }
+    public enPermissions? Permissions { get; set; }
     public virtual ICollection<Application> Applications { get; set; } = new List<Application>();
 
     public virtual ICollection<DetainedLicense> DetainedLicenseCreatedByUsers { get; set; } = new List<DetainedLicense>();

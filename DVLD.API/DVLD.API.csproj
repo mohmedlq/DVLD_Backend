@@ -17,7 +17,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Business\DVLD.Business.csproj" />
+    <ProjectReference Include="..\DVLD.Application\DVLD.Application.csproj" />
+    <ProjectReference Include="..\DVLD.Infrastructure\DVLD.Infrastructure.csproj" />
     <ProjectReference Include="..\DVLD.Domain\DVLD.Domain.csproj" />
   </ItemGroup>
 

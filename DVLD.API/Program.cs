@@ -1,19 +1,28 @@
-using DVLD.Business;
+using DVLD.Application;
+using DVLD.Infrastructure;
+using DVLD.API.Middlewares;
 using FluentValidation.AspNetCore;
-// using DVLD.API.Middlewares;
 
 var builder = WebApplication.CreateBuilder(args);
 
-// 1. ÊÓÌíá ÎÏãÇÊ Swagger (ÈÏáÇð ãä OpenApi ÇáÞÏíãÉ)
+// Add services to the container.
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+builder.Services.AddSwaggerGen(c =>
+{
+    c.CustomSchemaIds(type => type.FullName?.Replace("+", "."));
+});
 builder.Services.AddFluentValidationAutoValidation();
-builder.Services.AddProjectDependencies(builder.Configuration);
+
+// Clean Architecture Dependency Injection per layer
+builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.AddApplication();
+
 builder.Services.AddControllers();
 
 var app = builder.Build();
 
-// app.UseMiddleware<GlobalExceptionMiddleware>();
+// Global Exception Handling Middleware
+app.UseMiddleware<GlobalExceptionMiddleware>();
 
 if (app.Environment.IsDevelopment())
 {

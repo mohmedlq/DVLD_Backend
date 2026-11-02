@@ -1,5 +1,5 @@
-﻿using DVLD.Business.DTOs.People;
-using DVLD.Business.Interfaces;
+using DVLD.Application.DTOs.People;
+using DVLD.Application.Interfaces;
 using DVLD.Domain.Entities;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
